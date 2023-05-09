@@ -10,7 +10,7 @@
   
     h1 {
         position: absolute;
-        top: 90%;
+        top: 30%;
         left: 70%;
   
         font-size: 40px;
@@ -18,7 +18,7 @@
             Helvetica, sans-serif;
         background: linear-gradient(
             to right, #f32170, #ff6b08,
-             #cf23cf, #eedd44);
+             #cf23cf, #0000ff);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
@@ -27,6 +27,20 @@
   </head>
   <body>
     <H1>Software Development<h1>
+      <script>function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}</script>
+      <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+      
+      
+      
     
   
   
