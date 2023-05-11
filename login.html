@@ -1,43 +1,26 @@
 
-  
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>SPA SDK Sample</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-  </head>
-  <body>
-<!-- The code below includes your Project ID (P2P0wr07fBlrdVcENkke372dc0bV) -->
-<descope-wc
-	project-id="P2P0wr07fBlrdVcENkke372dc0bV"
-	flow-id="sign-up-or-in"
-	theme="light"
-/>
-
-<script>
-	const wcElement = document.getElementsByTagName('descope-wc')[0];
-
-	const onSuccess = (e) => {
-			console.log(e.detail.user.name)
-			console.log(e.detail.user.email)
-	};
-	const onError = (err) => console.log(err);
-
-	wcElement.addEventListener('success', onSuccess);
-	wcElement.addEventListener('error', onError);
-</script>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </body>
+<head>
+<title>Javascript Login Form Validation</title>
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="css/style.css"/>
+<!-- Include JS File Here -->
+<script src="js/login.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<h2>Javascript Login Form Validation</h2>
+<form id="form_id" method="post" name="myform">
+<label>User Name :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+<span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : Formget<br/>Password : formget#123</b></span>
+</div>
+</div>
+</body>
 </html>
+Copy
